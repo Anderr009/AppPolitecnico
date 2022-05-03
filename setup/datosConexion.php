@@ -27,7 +27,7 @@
         //funcion para comprobar que algun dato existe
         function ComprobarDato($tabla,$campo,$valorCamp){
             $conex = $this->conexion();
-            $sql = ("SELECT * FROM $tabla WHERE $campo = '$valorCamp'");
+            $sql = "SELECT * FROM $tabla WHERE $campo = '$valorCamp'";
             try{
                 $resultado = $conex->prepare($sql);
                 $resultado-> execute();
@@ -48,12 +48,13 @@
         //funcion para devolver el ID
         function GetId($tabla,$campo,$valorCamp){
             $conex = $this->conexion();
-            $sql = "SELECT ID from $tabla where $campo = '$valorCamp'";
+            $sql = "SELECT ID FROM $tabla WHERE $campo = '$valorCamp'";
             $consulta = $conex->prepare($sql);
             $consulta ->execute();
             //
             $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
-            return $resultado['ID'];
+            $id = $resultado["ID"];
+            return $id;
         }
     }
 ?>

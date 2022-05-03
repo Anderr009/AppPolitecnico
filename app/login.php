@@ -8,7 +8,7 @@ $conex = $conexion->conexion();
 
 $usuario = $_POST['username'];
 $cont = $_POST['password'];
-$sentenciaSQL="SELECT id FROM ulogin WHERE usuario = '$usuario' and contraseña = '$cont';";
+$sentenciaSQL="SELECT id FROM usuario WHERE nombreUsuario = '$usuario' and contraseña = '$cont';";
 $queryy = $conex->prepare($sentenciaSQL);
 $queryy->execute();
 $busca = $queryy->fetch(PDO::FETCH_ASSOC);
@@ -35,12 +35,12 @@ $busca = $queryy->fetch(PDO::FETCH_ASSOC);
 
 
 	
-$query = $conex->prepare("SELECT * FROM ulogin ");
+$query = $conex->prepare("SELECT * FROM usuario ");
 $query->execute();
 $result = $query->fetch(PDO::FETCH_ASSOC);
 
 
-if($usuario = $result['usuario'] || $cont = $result['contraseña']){
+if($usuario = $result['nombreUsuario'] || $cont = $result['contraseña']){
 	header("location:../Public/Index/index.php");
 	session_start();
 	$_SESSION['iniciado'] = $busca['id'];
