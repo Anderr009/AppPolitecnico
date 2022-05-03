@@ -48,11 +48,11 @@ function EliminarUsuario($id){
             //
             if($this->datos->ComprobarDato("usuario","nombreUsuario",$this->nombre)==false){
                 //creando un objeto de conexion
-                if($nivelUser <= 3){
+                if($nivelUser <= 4){
                     $conex = $this->datos->conexion();
                     //String de la consulta SQL
                     $sql = "INSERT INTO USUARIO VALUES(NULL,
-                            '$this->nombre','$this->pass','$nivelUser')";
+                            '$this->nombre','$this->pass',$nivelUser)";
                     //preparacion y ejecucion de la consulta
                     try{
                     $registro = $conex->prepare($sql);

@@ -17,7 +17,7 @@
 
         function Insertar(){
             $sql = "INSERT INTO clienteid VALUES(null,'$this->nombre',null,$this->fkCorreo,
-            $this->fkUser,null)";
+            $this->fkUser)";
             //cn
             $conex = new Conexion();
             $cn = $conex->conexion();

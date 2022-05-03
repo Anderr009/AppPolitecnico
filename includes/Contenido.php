@@ -1,67 +1,32 @@
-        <!-- LINEA 1 -->
 <?php
-require("../../setup/datosConexion.php");
 
-$conexion = new Conexion();
-$conex = $conexion->conexion();
-
-        
-        $sentenciaSQL= $conex->prepare("SELECT * FROM publicar WHERE id >0 and id< 6");
-        $sentenciaSQL->execute();
-        $lista=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-
-        $sentenciaSQL= $conex->prepare("SELECT * FROM publicar WHERE id >5 and id<11 ");
-        $sentenciaSQL->execute();
-        $lista2=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-
-        $sentenciaSQL= $conex->prepare("SELECT * FROM publicar WHERE id >10 and id<16 ");
-        $sentenciaSQL->execute();
-        $lista3=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-
-        $sentenciaSQL= $conex->prepare("SELECT * FROM publicar WHERE id >15 and id<21 ");
-        $sentenciaSQL->execute();
-        $lista4=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-
-        
-
+        //funcion para productos
+        function MostrarProductos($id){
+                $conex = new Conexion();
+                $cn = $conex->conexion();
+                $idReducido=$id - 10;
+                $sqlSelect = "SELECT * FROM producto";
+                $query = $cn->prepare($sqlSelect);
+                $query->execute();
+                while($registro = $query->fetch(PDO::FETCH_ASSOC)){
+                        ?>
+                                <div class="bloque-prod">
+                                        <div class="img">
+                                                <img src="<?php echo $registro[ 'foto']?>" alt="">
+                                        </div>
+                                        <div class="info">
+                                                <h4 class="nombre">
+                                                        <?php echo $registro['Nombre'];?>
+                                                </h4>
+                                                <p class="infoProd">
+                                                        Quedan: <?php echo $registro['Disponible'];?>
+                                                </p>
+                                        </div>
+                                        <div class="precio">
+                                                <?php echo $registro['Precio']."RD";?>
+                                        </div>
+                                </div>
+                        <?php
+                }
+        }
 ?>
-<?php foreach($lista as $info){  ?>
-        <div class="pContenido">
-            <div class="contenidoInfo">
-                    <a href="../../Public/cliente/publicaciones.php"><img src="../../imagenes\formularios\Producto\InsertarProd\sin-foto-ni-icono-de-imagen-en-blanco-cargar-imágenes-o-falta-marca-no-disponible-próxima-señal-silueta-naturaleza-simple-marco-215973362.jpg" alt="" width="150"></a>
-                    <h3><?php echo $info['titulo'] ?></h3>
-                    <p><?php if($info['descripcion']== ""){echo "No hay descripcion";}else{echo $info['descripcion'];}?></p>
-                    </div>
-</div>
-
-        <?php  } ?>
-<?php foreach($lista2 as $info){  ?>
-        <div class="pContenido">
-            <div class="contenidoInfo">
-                    <a href="../../Public/cliente/publicaciones.php"><img src="../../imagenes\formularios\Producto\InsertarProd\sin-foto-ni-icono-de-imagen-en-blanco-cargar-imágenes-o-falta-marca-no-disponible-próxima-señal-silueta-naturaleza-simple-marco-215973362.jpg" alt="" width="150"></a>
-                    <h3><?php echo $info['titulo'] ?></h3>
-                    <p><?php if($info['descripcion']== ""){echo "No hay descripcion";}else{echo $info['descripcion'];}?></p>
-                    </div>
-</div>
-
-        <?php  } ?>
-<?php foreach($lista3 as $info){  ?>
-        <div class="pContenido">
-            <div class="contenidoInfo">
-                    <a href="../../Public/cliente/publicaciones.php"><img src="../../imagenes\formularios\Producto\InsertarProd\sin-foto-ni-icono-de-imagen-en-blanco-cargar-imágenes-o-falta-marca-no-disponible-próxima-señal-silueta-naturaleza-simple-marco-215973362.jpg" alt="" width="150"></a>
-                    <h3><?php echo $info['titulo'] ?></h3>
-                    <p><?php if($info['descripcion']== ""){echo "No hay descripcion";}else{echo $info['descripcion'];}?></p>
-                    </div>
-</div>
-
-        <?php  } ?>
-<?php foreach($lista4 as $info){  ?>
-        <div class="pContenido">
-            <div class="contenidoInfo">
-                    <a href="../../Public/cliente/publicaciones.php"><img src="../../imagenes\formularios\Producto\InsertarProd\sin-foto-ni-icono-de-imagen-en-blanco-cargar-imágenes-o-falta-marca-no-disponible-próxima-señal-silueta-naturaleza-simple-marco-215973362.jpg" alt="" width="150"></a>
-                    <h3><?php echo $info['titulo'] ?></h3>
-                    <p><?php if($info['descripcion']== ""){echo "No hay descripcion";}else{echo $info['descripcion'];}?></p>
-                    </div>
-</div>
-
-        <?php  } ?>
