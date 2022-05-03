@@ -1,4 +1,5 @@
-<?php  session_start(); ?>
+<?php  session_start();
+        require("../../setup/datosConexion.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,11 +33,11 @@
 
     include("../../includes/Contenido.php");
 
-    
+    if(isset($_SESSION['valorBuscar'])){
+        $_SESSION['valorBuscar']+= 10;
+    }
+    MostrarProductos(10);
     ?>
-    <!-- LINEA 2 -->
-    
-    <!-- LINEA 3 -->
 
     </div>
     

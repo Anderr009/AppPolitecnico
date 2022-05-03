@@ -1,18 +1,18 @@
 <?php
 
 require("../setup/datosConexion.php");
+require("../Public/Administrativo/clases/user.php");
 
 $conexion = new Conexion();
 $conex = $conexion->conexion();
-
-
 $usuario = $_POST['username'];
 $cont = $_POST['password'];
-$sentenciaSQL="SELECT id FROM ulogin WHERE usuario = '$usuario' and contraseña = '$cont';";
+
+/*$sentenciaSQL="SELECT id FROM usuario WHERE nombreUsuario = '$usuario' and contraseña = '$cont';";
 $queryy = $conex->prepare($sentenciaSQL);
 $queryy->execute();
 $busca = $queryy->fetch(PDO::FETCH_ASSOC);
-
+*/
 // if (isset($_POST["mantener_sesion_abierta"])) {
 //         setcookie("COOKIE_INDEFINED_SESSION", TRUE, time()+31622400);
 // 		setcookie("COOKIE_DATA_INDEFINED_SESSION[username]", $usuario, time()+31622400);
@@ -35,19 +35,20 @@ $busca = $queryy->fetch(PDO::FETCH_ASSOC);
 
 
 	
-$query = $conex->prepare("SELECT * FROM ulogin ");
+$query = $conex->prepare("SELECT * FROM usuario WHERE nombreUsuario = '$usuario' and
+						contraseña = '$cont'");
 $query->execute();
 $result = $query->fetch(PDO::FETCH_ASSOC);
 
 
-if($usuario = $result['usuario'] || $cont = $result['contraseña']){
-	header("location:../Public/Index/index.php");
+if($usuario = $result['nombreUsuario'] || $cont = $result['contraseña']){
 	session_start();
-	$_SESSION['iniciado'] = $busca['id'];
+	$_SESSION['iniciado'] = $result['id'];
+	$_SESSION['nivel'] = $result['Nivel'];
 	$_SESSION['estado'] = true;
+	header("location:../Public/Index/scripts/validar-nivel.php");
 	}else{
 	header("location:../login.php");
-
 }
 
 #$username = $_GET['usuario'];

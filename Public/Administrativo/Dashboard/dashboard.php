@@ -8,11 +8,14 @@
 </head>
 <body>
     <div class="columna-izquierda">
+        <div>
+            <a href="../../../login.php">Cerrar sesion</a>
+        </div>
         <div class="bloque">
             <a href="Gestion-empleados/gestion.php">Gestionar empleados</a>
         </div>
         <div class="bloque">
-            <a href="../Productos/ver-prod/verProd.php">Inventario</a>
+            <a href="inventario/dashboard.php">Inventario</a>
         </div>
         <div class="bloque">
             <a href="#">Publicaciones</a>

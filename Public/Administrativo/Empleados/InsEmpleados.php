@@ -111,7 +111,7 @@
                     $empleado = new Empleado($nombre,$apellido,$cedula,$salario,$direccion,$horaEntrada,$horaSalida,$objUser,$objCorreo);
                     try{
                         if($empleado->InsertarEmpleado() != false){
-                        header("location:../Dashboard/dashboard.php");
+                        //header("location:../Dashboard/dashboard.php");
                     
                         }
                     }catch(PDOException $e){

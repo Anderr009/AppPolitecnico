@@ -6,7 +6,7 @@
 	<body>
 <div class="container">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6">	
 		<h2>Registro</h2>
 
 		<form role="form" name="registro" action="app/registro.php" method="post">
