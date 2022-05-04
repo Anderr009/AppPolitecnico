@@ -9,8 +9,8 @@
 </head>
 <body>
     <?php
-        require("../../../../setup/datosConexion.php");
-        require("../../clases/producto.php");
+        require("../../../setup/datosConexion.php");
+        require("../../Administrativo/clases/producto.php");
         //
         if(isset($_POST['enviar'])){
             $nombreImg = $_FILES['imagen']['name'];
