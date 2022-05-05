@@ -33,7 +33,7 @@
         ?>
         <a href="../../dashboard/inventario/dashboard.php" class="btn btn-secondary">Volver al menu</a>
     <table class="table table-hover">
-        <thead>
+        <thead class="table-dark">
             
             <tr>
                 <td>Nombre del producto:</td>

@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../../CSS/bootstrap/css/bootstrap.css"> 
 <link rel="stylesheet" href="../../../CSS/producto.css">
+<link rel="stylesheet" href="../../../CSS/styles.css">
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
         require("../clases/empleado.php");
         require("../../../setup/datosConexion.php");
     ?>
-    <a href="../Dashboard/Gestion-empleados/gestion.php">Cancelar</a>
+    <a href="../Dashboard/Gestion-empleados/gestion.php"><button class="botones-azul">Volver</button></a>
     <!-- El input de texto en direccion es temporal hasta que se introduzca
         el script para la ubicacion, cada input va acompañado con su propio label.-->
         <br>

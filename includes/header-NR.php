@@ -5,6 +5,7 @@
 	<title>Cabecera fija</title>
 
 	<link rel="stylesheet" href="../CSS/styles.css">
+		<link rel="stylesheet" href="../CSS/bootstrap/css/bootstrap.css">
 </head>
 
 
@@ -19,8 +20,8 @@
 			</a> <!-- / #logo-header -->
 		</nav>
 		<nav class="nav">
-				<a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a>
-				<a href="../login.php">Iniciar sesion</a>
+				<a href="../Index/index.php">Inicio</a>
+				<a href="../../login.php">Iniciar sesion</a>
 				<a href="../registro.php">Registrarse</a>
 
 		</nav><!-- / nav -->
