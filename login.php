@@ -1,14 +1,19 @@
 <?php session_start(); ?>
 <html>
 	<head>
-		<link rel="stylesheet" href="CSS/login.css">
+	<link rel="stylesheet" href="CSS/login.css">
 		<title>Formulario de Registro</title>
 	</head>
 	<body>
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-		<h2>Login</h2>
+		<?php     
+			 if(isset($_SESSION['estado'])){ 
+				 include("includes/headerR.php");
+				}else{
+					include("includes/header-NR.php");
+					
+				}
+				?>
+				<h2>Login</h2>
 
 		<form role="form" name="login" action="app/login.php" method="post">
 		  <div class="form-group">
@@ -24,7 +29,7 @@
 			Mantener sesion iniciada<input type="checkbox" name="mantener_sesion_abierta" value="si"><br>
 		  </div>
 
-		  <button type="submit" class="btn btn-primary">Acceder</button>
+		  <button type="submit">Acceder</button>
 		</form>
 		<div class="signup-link">
 			No estas registrado? <a href="registro.php"> signup

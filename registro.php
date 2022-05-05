@@ -1,16 +1,31 @@
 <?php session_start(); ?>
 <html>
 	<head>
+	<link rel="stylesheet" href="CSS/registro.css">
 		<title>Formulario de Registro</title>
 	</head>
 	<body>
+		<form class="formulario">
+			<h1 class="Create-acount" Crear una cuenta> </h1>
 <div class="container">
 <div class="row">
 <div class="col-md-6">	
-		<h2>Registro</h2>
+		<h3>Registro</h3>
 		<div class="iconos">
-			<div class="border-iconos"></div>
+			<div class="border-iconos">
+			<box-icon type='logo' name='instagram'></box-icon>
+</div>
+<div class="border-iconos">
+<box-icon name='twitter' type='logo' ></box-icon>
+
+</div> 
+<div class="border-iconos">
+<box-icon name='facebook-circle' type='logo' ></box-icon>
+
+</div>
+				
 		</div>
+		<p class="Acount-free"> Crear cuenta gratis </p>
 
 		<form role="form" name="registro" action="app/registro.php" method="post">
 		  <div class="form-group">

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size:'roboto', sans-serif;
+
+
+
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/descarga.jpg);
+
+
+}
+.container{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+
+
+}
+.formulario{
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(128, 128, 128, 0.473);
+    text-align: center;
+    border-radius: 13%;
+}
+.Create-acount{
+    padding: 2.7rem 0 ;
+    font-size: 1.7rem;
+
+}
+.iconos{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.border-iconos{
+     height: 20px;
+     width: 20px;
+     display: flex;
+     align-items: center;
+     padding: 1.5 rem;
+     border: solid thin white;
+     border-radius: 50%;
+     font-size: 1.5rem;
+     transition: all .3s ease-in;
+
+}
+.border-iconos:hover{
+    background-color: black;
+    cursor: pointer;
+    
+}
+.Acount-free{
+    padding:2rem 0;
+
+
+}
+.formulario input{
+    width: 70%;
+    display: block;
+    margin:auto;
+    margin-bottom: 2rem;
+    background-color: wheat;
+    border:none;
+    border-bottom: blue thin solid;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem 0;
+    color: transparent;
+
+
+
+}
+.formulario input[type="button"]{
+    width: 60%;
+    margin: auto;
+    border: solid thin transparent;
+    padding: .7rem;
+    border-radius: 2rem ;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: white;
+
+}

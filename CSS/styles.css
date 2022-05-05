@@ -1,0 +1,95 @@
+/* Variables */
+
+.inline-block{
+	display: inline-block;
+}
+
+.imgconlimites {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* Contenido INDEX */
+
+/* .contenido{
+	margin: auto;
+	display: block;
+	text-align: left;
+}
+
+.pContenido{
+	display: inline-flex;
+
+}
+
+.contenidoInfo{
+	display: block;
+	margin-left: 40px;
+	padding: 50px;
+	box-shadow: rgb(226, 226, 226)  1px 2px 1px 1px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.contenidoInfo img {
+    max-width: 100%;
+    height: auto;
+}
+.contenidoInfo p {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align:left;
+	width: 200px;
+}
+.contenidoInfo h3 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align:left;
+	width: 200px;
+} */
+
+/* Columnas de admin */
+
+.colum{
+	color: black;
+	font-size: 22px;
+	display: block;
+	text-align: center;
+	margin: 20px auto !important;
+
+	
+}
+
+.colum a{
+	text-decoration: none;
+}
+
+.colum:hover{
+	transition: all 1s;	
+	transform:scale(1.1);
+}
+
+/* Formularios */
+
+.Form{
+	width: 100%;
+	
+}
+
+.formulario{
+	display: block;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.frm-cont{
+	font-size: 19px;
+	margin: 5px;
+}
