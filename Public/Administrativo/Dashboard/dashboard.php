@@ -12,7 +12,7 @@
             <div class="columna-izquierda container">
                 <div class="row">
                     <div class="col colum">
-                        <a href="../../../login.php">Cerrar sesion</a>
+                        <a href="../../../app/cerrar.php">Cerrar sesion</a>
                     </div>
                     <div class="bloque col colum">
                         <a href="Gestion-empleados/gestion.php">Gestionar empleados</a>
