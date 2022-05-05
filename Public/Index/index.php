@@ -30,61 +30,58 @@
             </div>
     </section>
 
-
-    <div class="contenido">
-    <?php
-
-
-
-    if(isset($_SESSION['valorBuscar'])){
-        $_SESSION['valorBuscar']+= 10;
-    }
-    
-    MostrarProductos(10);
-    ?>
-<?php
-
-//funcion para productos
-function MostrarProductos($id){
-        $conex = new Conexion();
-        $cn = $conex->conexion();
-        $idReducido=$id - 10;
-        $sqlSelect = "SELECT * FROM producto WHERE aprobada = 1";
-        $query = $cn->prepare($sqlSelect);
-        $query->execute();
-        while($registro = $query->fetch(PDO::FETCH_ASSOC)){
-                ?>
-                        <div class="contenido">
-                                <div class="pContenido">
-                                        <div class="contenidoInfo">
-                                                
-                                                <div class="img card-img-top">
-                                                        <img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="200px" height="200px" alt="">
-                                                </div>
-                                                <div class="info card-body">
-                                                        <h4 class="nombre card-title">
-                                                                <?php echo $registro['Nombre'];?>
-                                                        </h4>
-                                                        <p class="infoProd card-footer">
-                                                                Quedan: <?php echo $registro['Disponible'];?>
-                                                        </p>
-                                                </div>
-                                                <div class="precio">
-                                                        <?php echo $registro['Precio']."RD";?>
-                                                </div>
-                                                <div class="btn">
-                                                    <a href="plantilla-prod.php?id=<?php echo $registro['id']?>">Comprar</a></div>
-                
-                                        </div>
-
-                                </div>
-                        </div>
+        <section class="productos">
+                <div class="inf">
+                        <h2>Productos disponibles</h2>
+                </div>
+                <div class="contenido">
                 <?php
-        }
-}
-?>
-    </div>
-    
->>>>>>> a753b3e63c7e1e7d18ef7afbc2b318aafb7238ba
+                
+                
+                
+                if(isset($_SESSION['valorBuscar'])){
+                        $_SESSION['valorBuscar']+= 10;
+                }
+                
+                MostrarProductos(10);
+                ?>
+                <?php
+                
+                //funcion para productos
+                function MostrarProductos($id){
+                        $conex = new Conexion();
+                        $cn = $conex->conexion();
+                        $idReducido=$id - 10;
+                        $sqlSelect = "SELECT * FROM producto WHERE aprobada = 1";
+                        $query = $cn->prepare($sqlSelect);
+                        $query->execute();
+                        while($registro = $query->fetch(PDO::FETCH_ASSOC)){
+                                ?>
+                                      
+                                <div class="producto">
+                                        <div class="img card-img-top">
+                                                <img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="200px" height="200px" alt="">
+                                        </div>
+                                        <div class="info card-body">
+                                                <h4 class="nombre card-title">
+                                                        <?php echo $registro['Nombre'];?>
+                                                </h4>
+                                        <p class="infoProd card-footer">
+                                                Quedan: <?php echo $registro['Disponible'];?>
+                                                <?php echo $registro['Precio']."RD";?>
+                                        </p>
+                                        </div>
+                                                <div class="btn">
+                                                        <a href="plantilla-prod.php?id=<?php echo $registro['id']?>">Comprar</a></div>
+                
+                                </div>
+            
+                                <?php
+                        }
+                }
+                ?>
+                </div>
+</section>
+
 </body>
 </html>

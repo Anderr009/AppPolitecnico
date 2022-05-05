@@ -21,12 +21,12 @@
                         <a href="inventario/dashboard.php">Inventario</a>
                     </div>
                     <div class="bloque col colum">
-                        <a href="#">Publicaciones</a>
+                        <a href="../publicaciones/dashboard.php">Publicaciones</a>
                     </div>
-                    <div class="bloque col colum">
+               <!--     <div class="bloque col colum">
                         <a href="../Encuesta/dashboard-encuesta/dashboard.php">Gestionar encuestas</a>
                     </div>
-                </div>
+                </div>-->
             </div>
             
         </div>

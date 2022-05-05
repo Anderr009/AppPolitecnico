@@ -19,12 +19,10 @@
 
 		<nav class="nav">
 			<ul>
+			<li>Administrador</li>
 			<li><a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a></li>
 				<li><a href="../../../app/cerrar.php">Cerrar sesion </a></li>	
-				<li><a href="#">Opciones</a></li>
-				<li>
-					<a href="../Index/insProducto/insProducto.php">Publicar</a>
-				</li>
+				
 			</ul>
 		</nav><!-- / nav -->
 

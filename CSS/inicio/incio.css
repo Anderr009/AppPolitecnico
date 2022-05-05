@@ -28,5 +28,37 @@ section.welcome div.info h1{
 
 /*-----------*/
 section.productos{
-  
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+section.productos div.inf {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+section.productos div.inf h2{
+  margin: 0px auto;
+  font-size: 38px;
+  display: block;
+  padding: 8px;
+  border-bottom: 2px solid black;
+}
+section.productos div.contenido{
+  min-height: 800px;
+  width: 80%;
+  margin: 6em auto;
+  background: rgba(245, 245, 220, 0.524);
+  padding: 3em 3em; 
+}
+/*---------PROD----*/
+section.producto div.contenido div.producto{
+  border-radius: 8%;
+  -webkit-border-radius: 8%;
+  -moz-border-radius: 8%;
+  -ms-border-radius: 8%;
+  -o-border-radius: 8%;
 }
