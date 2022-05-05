@@ -18,7 +18,7 @@
     <a href="../Dashboard/Gestion-empleados/gestion.php">Cancelar</a>
     <!-- El input de texto en direccion es temporal hasta que se introduzca
         el script para la ubicacion, cada input va acompañado con su propio label.-->
-        <h3 class="d-flex justify-content-center">Insertar Productos</h3>
+        <h3 class="d-flex justify-content-center">Insertar Empleado</h3>
         <br>
         <div class="container-sm d-flex justify-content-center bg-light">
             <form action="" method="POST" id="formulario" class="form-group col-5">
