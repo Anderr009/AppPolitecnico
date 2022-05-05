@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../../CSS/styles.css">
 </head>
 <body>
+    
     <?php
         //importar datos
         require("../../../../setup/datosConexion.php");
+        require("../../../../includes/headerAdmin.php");
         require("../../clases/producto.php");
         //
         $conex = new Conexion();
@@ -27,16 +30,20 @@
             unlink($url);
             header("location:?");
         }
-    ?>
-    <table>
-        <tr>
-            <td>Nombre del producto:</td>
-            <td>Precio:</td>
-            <td>Disponibles:</td>  
-            <td>Fecha de ingreso:</td>
-            <td>Descuento:</td>
-            <td>Eliminar:</td>
-        </tr>
+        ?>
+        <a href="../../dashboard/inventario/dashboard.php" class="btn btn-secondary">Volver al menu</a>
+    <table class="table table-hover">
+        <thead>
+            
+            <tr>
+                <td>Nombre del producto:</td>
+                <td>Precio:</td>
+                <td>Disponibles:</td>  
+                <td>Fecha de ingreso:</td>
+                <td>Descuento:</td>
+                <td>Eliminar:</td>
+            </tr>
+        </thead>
         <?php
             while($registro = $consulta->fetch(PDO::FETCH_ASSOC)){
                 ?>
@@ -46,8 +53,8 @@
                 <td><?php echo $registro['Disponible'];?></td>
                 <td><?php echo $registro['fechaIngreso'];?></td>
                 <td><?php echo $registro['Descuento'];?></td>
-                <td><a href="?id=<?php echo $registro['id'];?>&direct=<?php echo $registro['foto'];?>">Eliminar</a></td>
-                <td><a href="../mod-prod/mod-prod.php?id=<?php echo $registro['id'];?>">Modificar</a></td>
+                <td><a href="?id=<?php echo $registro['id'];?>&direct=<?php echo $registro['foto'];?>"><button class="btn btn-danger">Eliminar</button></a></td>
+                <td><a href="../mod-prod/mod-prod.php?id=<?php echo $registro['id'];?>"><button class="btn btn-warning">Modificar</button></a></td>
             </tr>
             <?php }
         ?>
