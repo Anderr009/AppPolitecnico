@@ -32,14 +32,13 @@
                     $producto->SetFoto($nombreImg);
                     $producto->InsertarProducto(0);
                     $idProd = $producto->BuscarId($producto->GetNombre());
-                    var_dump($idProd);
                     //consulta2
                     $sqlInsert = "INSERT INTO publicaciones VALUES($idUser,$idProd)";
                     $conex = new Conexion();
                     $cn = $conex->conexion();
                     $sentencia = $cn->prepare($sqlInsert);
                     $sentencia->execute();
-                  //  header("location:../index.php");
+                    header("location:../index.php");
                 }else{
                     ?>
                     <div class="msj-error">
@@ -55,7 +54,7 @@
             }
         }
     ?>
-    <a href="cancelar.php">Cancelar</a>
+    <a href="insProducto.php">Cancelar</a>
     <form action="" method="POST" enctype="multipart/form-data">
         <div>
         <label for="imagen">Subir imagen</label>

@@ -31,7 +31,6 @@
     <?php
 
 
-    include("../../includes/Contenido.php");
 
     if(isset($_SESSION['valorBuscar'])){
         $_SESSION['valorBuscar']+= 10;
