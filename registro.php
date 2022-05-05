@@ -15,12 +15,12 @@
 			<div class="border-iconos">
 			<box-icon type='logo' name='instagram'></box-icon>
 </div>
-<div class="border-iconos">
+<!-- <div class="border-iconos">
 <box-icon name='twitter' type='logo' ></box-icon>
 
 </div> 
 <div class="border-iconos">
-<box-icon name='facebook-circle' type='logo' ></box-icon>
+<box-icon name='facebook-circle' type='logo' ></box-icon> -->
 
 </div>
 				
