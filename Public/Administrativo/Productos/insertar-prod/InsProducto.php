@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../../../../CSS/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../../../../CSS/producto.css">
 <?php  
     
     require("../../../../setup/datosConexion.php");
@@ -29,10 +30,10 @@
     ?>
     <!-- Volver al dashboard es temporal a lo que se programa un inventario.-->
     <a href="../../Dashboard/dashboard.php">Volver</a>
-    <h3 class="d-flex justify-content-center">Insertar Productos</h3>
-    <br>
-    <div class="container-sm d-flex justify-content-center">
-            <form action="" method="POST" id="formulario" class="form-group col-5">
+    <div class="container-sm">
+        <br>
+        <h3 class="titulo">Insertar Productos</h3>
+            <form action="" method="POST" id="formulario" class="form-group">
                 <br>
                 <label for="Name">Nombre del Producto:</label>
                 <input type="text" name="nombre" id="" class="form-control">
@@ -49,7 +50,9 @@
                <!-- <label for="Descuento">Descuento:</label>
                 <input type="text" name="descuento" id="">-->
                 <br>
-                <input type="submit" value="Enviar" name="Enviar" class="btn btn-outline-success">
+                <input type="submit" value="Enviar" name="Enviar" class="btn btn-outline-primary">
+                <br>
+                <br>
         
     </form>
     </div>
