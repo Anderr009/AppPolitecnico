@@ -5,7 +5,6 @@ $_SESSION['estado'] ?>
 <head>
 	<meta charset="utf-8">
 	<title>Cabecera fija</title>
-
 </head>
 
 

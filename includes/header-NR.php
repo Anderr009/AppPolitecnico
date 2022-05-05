@@ -5,14 +5,13 @@
 	<title>Cabecera fija</title>
 
 
-	
-
 </head>
 
 
 <body>
 	
 
+	
 	
 <header id="main-header">
 		<nav>
@@ -21,9 +20,11 @@
 			</a> <!-- / #logo-header -->
 		</nav>
 		<nav class="nav">
+
 				<a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a>
 				<a href="../../login.php">Iniciar sesion</a>
 				<a href="../../registro.php">Registrarse</a>
+
 
 		</nav><!-- / nav -->
 

@@ -50,7 +50,8 @@ if($usuario = $result['nombreUsuario'] || $cont = $result['contraseña']){
 	
 	header("location:../Public/Index/scripts/validar-nivel.php");
 	}else{
-	header("location:../login.php");
+	echo "<script>alert('Los datos que incresaste son incorrectos')</script>";
+	header("Refresh:0, URL=../login.php");
 }
 
 #$username = $_GET['usuario'];

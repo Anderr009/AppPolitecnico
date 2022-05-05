@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../../../CSS/styles.css">
+    <link rel="stylesheet" href="../../../CSS/header/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dashboard</title>
@@ -12,7 +13,7 @@
             <div class="columna-izquierda container">
                 <div class="row">
                     <div class="col colum">
-                        <a href="../../../login.php">Cerrar sesion</a>
+                        <a href="../../../app/cerrar.php">Cerrar sesion</a>
                     </div>
                     <div class="bloque col colum">
                         <a href="Gestion-empleados/gestion.php">Gestionar empleados</a>

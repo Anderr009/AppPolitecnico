@@ -46,7 +46,7 @@ form .form-group     {
     position: relative;
     top: 50%;
     left: 5px;
-    color: adadad;
+    color: #adadad;
     transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
@@ -100,3 +100,11 @@ button[type="submit"]:hover{
     color: #666666;
 }
 
+.checkbox{
+    width: 20px !important;
+}
+
+.form-group label{
+    display: inline-flex;
+    margin-right: 2px;
+}
