@@ -5,6 +5,7 @@
 	<title>Cabecera fija</title>
 
         <link rel="stylesheet" href="../CSS/styles.css">
+		<link rel="stylesheet" href="../CSS/bootstrap/css/bootstrap.css">
 </head>
 
 
