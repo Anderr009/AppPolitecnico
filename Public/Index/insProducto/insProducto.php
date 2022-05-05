@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insertar producto</title>
-</head>
+</head> 
 <body>
     <?php
         if(isset($_POST['Enviar'])){

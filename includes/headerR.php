@@ -25,7 +25,7 @@ $_SESSION['estado'] ?>
 			<ul>
 			<li><a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a></li>
 					<a href="../../app/cerrar.php">Cerrar sesion </a>
-				<li><a href="#">Opciones</a></li>
+				<li><a href="../Cliente/perfil.php">Perfil</a></li>
 				<li>
 					<a href="../Index/insProducto/insProducto.php">Publicar</a>
 				</li>

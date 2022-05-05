@@ -8,6 +8,9 @@
 <div class="row">
 <div class="col-md-6">	
 		<h2>Registro</h2>
+		<div class="iconos">
+			<div class="border-iconos"></div>
+		</div>
 
 		<form role="form" name="registro" action="app/registro.php" method="post">
 		  <div class="form-group">
