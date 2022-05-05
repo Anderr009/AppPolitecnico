@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../../../CSS/bootstrap/css/bootstrap.css"> 
+<link rel="stylesheet" href="../../../CSS/producto.css">
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,43 +15,51 @@
         require("../clases/empleado.php");
         require("../../../setup/datosConexion.php");
     ?>
-    
     <a href="../Dashboard/Gestion-empleados/gestion.php">Cancelar</a>
     <!-- El input de texto en direccion es temporal hasta que se introduzca
         el script para la ubicacion, cada input va acompañado con su propio label.-->
-        <h3 class="d-flex justify-content-center">Insertar Empleado</h3>
         <br>
-        <div class="container-sm d-flex justify-content-center bg-light">
-            <form action="" method="POST" id="formulario" class="form-group col-5">
-                <!--Nombre_empleado-->
-                <div class="nombre form-group">
-                    <label for="Name">Nombre del empleado</label>
-                    <input type="text" name="Nombre" autocomplete="off" id="" class="form-control ">
+        <div class="container-sm">
+            <br>
+            <h3 class="titulo">Insertar Empleado</h3>
+            <form action="" method="POST" id="formulario" class="form-group">
+                <div class="form-row d-flex">
+                    <!--Nombre_empleado-->
+                    <div class="nombre form-group col-md-6" >
+                        <label for="Name">Nombre del empleado</label>
+                        <input type="text" name="Nombre" autocomplete="off" id="" class="form-control">
+                    </div>
+                    <!--Apellido_empleado-->
+                    <div class="apellido form-group col-md-5">
+                        <label for="Apellido" class="mx-2">Apellido:</label>
+                        <input type="text" name="Apellido" autocomplete="off" id="" class="form-control mx-1">
+                    </div>
+                    <!--Cedula-->
+
                 </div>
-                <!--Apellido_empleado-->
-                <div class="apellido form-group">
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" name="Apellido" autocomplete="off" id="" class="form-control">
+                <div class="form-row d-flex">
+                    <div class="cedula form-group col-md-5" id="cedula">
+                        <label for="Cedula">Cedula:</label>
+                        <input type="text" name="Cedula" autocomplete="off" id="" class="form-control">
+                    </div>
+                    <!--Salario-->
+                    <div class="monto form-group col-md-5" id="monto">
+                        <label for="salario" class="mx-2">Salario:</label>
+                        <input type="text" name="salario" class="form-control mx-2">
+                    </div>
                 </div>
-                <!--Cedula-->
-                <div class="cedula form-group" id="cedula">
-                    <label for="Cedula">Cedula:</label>
-                    <input type="text" name="Cedula" autocomplete="off" id="" class="form-control">
-                </div>
-                <!--Salario-->
-                <div class="monto form-group" id="monto">
-                    <label for="salario">Salario:</label>
-                    <input type="text" name="salario" class="form-control">
-                </div>
-                <!--Hora_entrada-->
-                <div class="horaE form-group col-3">
-                    <label for="HoraEntrada">Hora de entrada:</label>
-                    <input type="time" name="HoraEntrada" autocomplete="off" id="" class="form-control">
-                </div>
-                <!--Hora_salida-->
-                <div class="horaH form-group col-3">
-                    <label for="HoraSalida">Hora salida:</label>
-                    <input type="time" name="HoraSalida" autocomplete="off" id="" class="form-control">
+                <div class="form-row d-flex">
+                    <!--Hora_entrada-->
+                    <div class="horaE form-group col-3">
+                        <label for="HoraEntrada">Hora de entrada:</label>
+                        <input type="time" name="HoraEntrada" autocomplete="off" id="" class="form-control">
+                    </div>
+                    <!--Hora_salida-->
+                    <div class="horaH form-group col-3">
+                        <label for="HoraSalida" class="mx-3">Hora salida:</label>
+                        <input type="time" name="HoraSalida" autocomplete="off" id="" class="form-control mx-3">
+                    </div>
+
                 </div>
                 <!--NombreUsuario-->
                 <div class="nombreUs" id="nombreUs form-group">
@@ -58,15 +67,16 @@
                     <input type="text" name="user" autocomplete="off" id="" class="form-control">
                 </div>
                 <!--Contraseña-->
+                <div class="form-row d-flex">
                 <div class="pass form-group" id="password">
                     <label for="Pass">Contraseña</label>
                     <input type="password" autocomplete="off" name="pass" id="" class="form-control">
                 </div>
                 <div class="pass2 form-group" id="password2">
-                    <label for="Pass">Repita la contraseña:</label>
-                    <input type="password" autocomplete="off" name="pass2" id="" class="form-control">
+                    <label for="Pass" class="mx-2">Repita la contraseña:</label>
+                    <input type="password" autocomplete="off" name="pass2" id="" class="form-control mx-2">
                 </div>
-        
+                </div>
                 <!--Correo-->
                 <div class="correo form-group" id="correo">
                     <label for="Correo">Correo:</label>
@@ -74,7 +84,7 @@
                 </div>
                 <!--Direcc-->
                 <div class="direcc form-group">
-                    <label for="Direccion">Direccion</label>
+                    <label for="Direccion">Direccion:</label>
                     <input type="text" autocomplete="off" name="direccion" placeholder="Direccion:"class="form-control">
                 </div>
                 <!--telefono-->
@@ -82,7 +92,10 @@
                     <label for="telef">Telefono:</label>
                     <input type="text" name="telef" id="" class="form-control">
                 </div>
-                <input type="submit" value="Enviar" name="Enviar">
+                <br> 
+                <input type="submit" value="Enviar" name="Enviar" class="btn btn-outline-success">
+                <br>
+                <br>
                 <!--Script para validar el formulario-->
                <!-- <script src="../../../JS/scripts/validar/empleado/validarCorreo.js"></script>-->
                 <?php
