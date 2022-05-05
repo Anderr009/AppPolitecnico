@@ -31,7 +31,6 @@
     <?php
 
 
-    include("../../includes/Contenido.php");
 
     if(isset($_SESSION['valorBuscar'])){
         $_SESSION['valorBuscar']+= 10;
@@ -51,23 +50,30 @@ function MostrarProductos($id){
         $query->execute();
         while($registro = $query->fetch(PDO::FETCH_ASSOC)){
                 ?>
-                        <div class="bloque-prod">
-                                <div class="img">
-                                        <img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="200px" height="200px" alt="">
+                        <div class="contenido">
+                                <div class="pContenido">
+                                        <div class="contenidoInfo">
+                                                
+                                                <div class="img card-img-top">
+                                                        <img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="200px" height="200px" alt="">
+                                                </div>
+                                                <div class="info card-body">
+                                                        <h4 class="nombre card-title">
+                                                                <?php echo $registro['Nombre'];?>
+                                                        </h4>
+                                                        <p class="infoProd card-footer">
+                                                                Quedan: <?php echo $registro['Disponible'];?>
+                                                        </p>
+                                                </div>
+                                                <div class="precio">
+                                                        <?php echo $registro['Precio']."RD";?>
+                                                </div>
+                                                <div class="btn">
+                                                    <a href="plantilla-prod.php?id=<?php echo $registro['id']?>">Comprar</a></div>
+                
+                                        </div>
+
                                 </div>
-                                <div class="info">
-                                        <h4 class="nombre">
-                                                <?php echo $registro['Nombre'];?>
-                                        </h4>
-                                        <p class="infoProd">
-                                                Quedan: <?php echo $registro['Disponible'];?>
-                                        </p>
-                                </div>
-                                <div class="precio">
-                                        <?php echo $registro['Precio']."RD";?>
-                                </div>
-                                <div class="btn">
-                                    <a href="plantilla-prod.php?id=<?php echo $registro['id']?>">Comprar</a></div>
                         </div>
                 <?php
         }

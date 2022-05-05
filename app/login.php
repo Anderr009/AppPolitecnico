@@ -44,6 +44,7 @@ $result = $query->fetch(PDO::FETCH_ASSOC);
 if($usuario = $result['nombreUsuario'] || $cont = $result['contraseña']){
 	session_start();
 	$_SESSION['iniciado'] = $result['ID'];
+	$_SESSION['usuario'] = $result;
 	$_SESSION['nivel'] = $result['Nivel'];
 	$_SESSION['estado'] = true;
 	

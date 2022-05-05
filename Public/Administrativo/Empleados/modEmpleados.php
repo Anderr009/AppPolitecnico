@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../CSS/styles.css">
 </head>
 <body>
     <?php
         //  
         require("../../../setup/datosConexion.php");
         require('../clases/empleado.php');
+        include("../../../includes/headerAdmin.php");
         //
     
       //  require('../../../setup/datosConexion.php');
@@ -42,49 +44,57 @@
         $SQLContador->execute();
         $contador = $SQLContador->fetch(PDO::FETCH_ASSOC);
     ?>  
-    <a href="../Dashboard/dashboard.php">Volver al menu</a>
+    <a href="../Dashboard/dashboard.php" class="btn btn-secondary">Volver al menu</a>
 
     
-    <div class="informacion">
-        <h2>Número de empleados: <?php echo $contador['Empleados']?> </h2>
-        <a href="Buscador/buscador.php">Buscar por filtros</a>
+    <div class="informacion ">
+        <h2 class="text-center">Número de empleados: <?php echo $contador['Empleados']?> </h2>
+        <br>
+        <a href="Buscador/buscador.php"><button class="btn btn-primary">Buscar por filtro</button></a>
+        <br>
+        <br>
     </div>
-    <table>
-        <tr>
-            <td>Nombre completo:</td>
-            <td>Cedula</td>
-            <td>Hora de entrada:</td>
-            <td>Correo:</td>
-            <td>Nombre de usuario:</td>
-            <td>Salario del emepleado:</td>
-            <td colspan="2">Opciones:</td>
-            </tr>
-            <?php
-            //
-            $consulta = $cn -> prepare($sql);
-            try{
-                $consulta->execute();
-            }catch(PDOException $e){
-                $e->getMessage();
-            }
-            while($resultado = $consulta->fetch(PDO::FETCH_ASSOC)){
-                ?>
-                <tr>
-                     <td><?php echo $resultado['Nombre'];?></td>
-                     <td><?php echo $resultado['cedula'];?></td>
-                     <td><?php echo $resultado['HoraEntrada'];?></td>
-                     <td><?php echo $resultado['correo'];?></td>
-                     <td><?php echo $resultado['nombreUsuario'];?></td>
-                     <td><?php echo $resultado['salario'];?></td>
-                     <?php echo $resultado['fkCorreo'];?>
-                     <td><a href="FormAjustes/formAjustes.php?id=<?php echo$resultado['ID']?>">Ajustes</a></td>
-                    <td><a href="?id=<?php echo$resultado['ID']?>&idUs=<?php echo$resultado['fkUsuario']?>&idCor=<?php echo$resultado['fkCorreo']?>">Eliminar</a></td>
+    <table class="table table-hover ">
+        <thead class="table-dark">
+
+            <tr>
+                <td>Nombre completo:</td>
+                    <td>Cedula</td>
+                    <td>Hora de entrada:</td>
+                    <td>Correo:</td>
+                    <td>Nombre de usuario:</td>
+                    <td>Salario del emepleado:</td>
+                    <td colspan="2">Opciones:</td>
                 </tr>
-            
-            <?php 
-            }
-    
-            ?>
-    </table>
+        </thead>
+            <tbody class="">
+                <?php
+                //
+                $consulta = $cn -> prepare($sql);
+                try{
+                    $consulta->execute();
+                }catch(PDOException $e){
+                    $e->getMessage();
+                }
+                while($resultado = $consulta->fetch(PDO::FETCH_ASSOC)){
+                    ?>
+                    <tr>
+                         <td><?php echo $resultado['Nombre'];?></td>
+                         <td><?php echo $resultado['cedula'];?></td>
+                         <td><?php echo $resultado['HoraEntrada'];?></td>
+                         <td><?php echo $resultado['correo'];?></td>
+                         <td><?php echo $resultado['nombreUsuario'];?></td>
+                         <td><?php echo $resultado['salario'];?></td>
+                         <?php echo $resultado['fkCorreo'];?>
+                         <td><a href="FormAjustes/formAjustes.php?id=<?php echo$resultado['ID']?>"><button class="btn btn-warning">Ajustes</button></a></td>
+                        <td><a href="?id=<?php echo$resultado['ID']?>&idUs=<?php echo$resultado['fkUsuario']?>&idCor=<?php echo$resultado['fkCorreo']?>"><button class="btn btn-danger">Eliminar</button></a></td>
+                    </tr>
+                
+                <?php 
+                }
+        
+                ?>
+            </tbody>
+        </table>
 </body>
 </html>

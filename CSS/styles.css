@@ -11,93 +11,12 @@
 }
 
 
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-}
-
-/* Header */
-
-
-
-/* Estas líneas de CSS las usaremos para dar estilo a la cabecera: */
-
-#main-header {
-	background: #333;
-	color: white;
-	height: 80px;
-	width: 100%;
-}	
-	#main-header a {
-		color: white;
-	}
-
-/*
- * Logo
- */
-#logo-header {
-	float: left;
-	padding: 15px 0 0 20px;
-	text-decoration: none;
-}
-	#logo-header:hover {
-		color: #0b76a6;
-	}
-	
-	#logo-header .site-name {
-		display: block;
-		font-weight: 700;
-		font-size: 1.2em;
-	}
-	
-	#logo-header .site-desc {
-		display: block;
-		font-weight: 300;
-		font-size: 0.8em;
-		color: #999;
-	}
-	
-
-/*
- * Navegación
- */
-.nav {
-	float: right;
-}
-	.nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 20px;
-	}
-	
-		.nav ul li {
-			display: inline-block;
-			line-height: 50px;
-			padding: 15px;
-}
-		
-			
-			.nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
-			
-				.nav ul li a:hover {
-					border-bottom: rgb(255, 255, 255) solid 2px;
-					transition: ease all 1s;
-					border-radius: 4px;
-				}
-
-/* Boton */
 
 
 
 /* Contenido INDEX */
 
-.contenido{
+/* .contenido{
 	margin: auto;
 	display: block;
 	text-align: left;
@@ -134,40 +53,43 @@ body {
 	overflow: hidden;
 	text-align:left;
 	width: 200px;
-}
+} */
 
+/* Columnas de admin */
 
-/* CONTENEDOR PUBLICACIONES */
-
-#contenedor-publicaciones{
-	background-color: #999;
-	padding: 60px;
-	width: 30%;
+.colum{
+	color: black;
+	font-size: 22px;
 	display: block;
-	margin: 30px auto ;
-	max-height: 700px;
-	overflow: auto;
+	text-align: center;
+	margin: 20px auto !important;
+
+	
 }
 
-#contenedor-publicaciones img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.colum a{
+	text-decoration: none;
 }
 
-
-/* INFORMACION DE PUBLICACIONES */
-
-.info-publicacion ul li {
-	list-style: none;
+.colum:hover{
+	transition: all 1s;	
+	transform:scale(1.1);
 }
 
-.info-publicacion {
-	display: inline-block;
-	list-style: none;
-	word-wrap: break-word;
-	overflow: auto;
+/* Formularios */
+
+.Form{
+	width: 100%;
+	
 }
 
+.formulario{
+	display: block;
+	margin: 50px auto;
+	text-align: center;
+}
 
-
+.frm-cont{
+	font-size: 19px;
+	margin: 5px;
+}
