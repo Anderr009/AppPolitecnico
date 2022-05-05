@@ -49,8 +49,9 @@ if($usuario = $result['nombreUsuario'] || $cont = $result['contraseña']){
 	$_SESSION['estado'] = true;
 	
 	header("location:../Public/Index/scripts/validar-nivel.php");
-	}else{
-	header("location:../login.php");
+}else{
+	echo "<script> alert('La informacion ingresada es incorrecta'); </script>";
+	header("Refresh:0,URL=../login.php");
 }
 
 #$username = $_GET['usuario'];
