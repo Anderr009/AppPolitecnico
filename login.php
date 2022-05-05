@@ -11,8 +11,6 @@
 				}else{
 					include("includes/header-NR.php");
 					
-				}
-				?>
 				<h2>Login</h2>
 
 		<form role="form" name="login" action="app/login.php" method="post">
