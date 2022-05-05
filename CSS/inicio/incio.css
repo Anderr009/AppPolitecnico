@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+section.welcome{
+  width: 100%;
+  background-image: url(../../imagenes/Inicio/inicio.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-attachment: fixed;
+  height: 580px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+section.welcome div.info{
+  color: #F8F8F8;
+}
+section.welcome div.info h1{
+  font-size: 80px;
+  padding: 12px;
+  border: 8px solid #F8F8F8;
+}
+
+/*-----------*/
+section.productos{
+  
+}

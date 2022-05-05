@@ -16,20 +16,17 @@ $_SESSION['estado'] ?>
 
 	
 	<header id="main-header">
-		
-		<a id="logo-header" href="#">
-			<span class="site-name">Pagina de ventas</span>
-		</a> <!-- / #logo-header -->
-
+		<nav>
+			<a id="logo-header" href="#">
+				<span class="site-name">Pagina de ventas</span>
+			</a> <!-- / #logo-header -->
+		</nav>
 		<nav class="nav">
-			<ul>
-			<li><a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a></li>
-					<a href="../../app/cerrar.php">Cerrar sesion </a>
-				<li><a href="../Cliente/perfil.php">Perfil</a></li>
-				<li>
-					<a href="../Index/insProducto/insProducto.php">Publicar</a>
-				</li>
-			</ul>
+				<a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a>
+				<a href="../../app/cerrar.php">Cerrar sesion </a>
+				<a href="../Cliente/perfil.php">Perfil</a>
+				<a href="../Index/insProducto/insProducto.php">Publicar</a>
+
 		</nav><!-- / nav -->
 
 	</header><!-- / #main-header -->
