@@ -5,9 +5,11 @@
 		<title>Formulario de Registro</title>
 	</head>
 	<body>
+
 <div class="container">
 <div class="row">
 <div class="col-md-6">
+	
 		<h2>Login</h2>
 
 		<form role="form" name="login" action="app/login.php" method="post">

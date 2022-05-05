@@ -13,7 +13,15 @@
     </head>
     <body>
         
+    <?php 
+     if(isset($_SESSION['estado'])){ 
+         include("../../includes/headerR.php");
+        }else{
+        include("../../includes/header-NR.php");
 
+    }
+
+        ?>
 
     <section class="welcome">
             <div class="info">
