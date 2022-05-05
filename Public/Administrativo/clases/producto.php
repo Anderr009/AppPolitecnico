@@ -40,6 +40,19 @@
             $sentencia = $cn->prepare($sqlInsert);
             $sentencia->execute();
         }*/
+        //funcion para devolver id
+        function BuscarId($nombre){
+            $conex = new Conexion();
+            $cn = $conex->conexion();
+            //
+            $sqlSelect = "SELECT * FROM producto WHERE Nombre = '$nombre'";
+            $query = $cn->prepare($sqlSelect);
+            $query->execute();
+            $reg = $query->fetch(PDO::FETCH_ASSOC);
+            $id = $reg['id'];
+            return $id;
+        }
+
         //funciones precio
         function GetPrecio(){
             return $this->precio;
@@ -72,13 +85,13 @@
             }
         }
         //insertar prod
-        function InsertarProducto(){
+        function InsertarProducto($aprobacion){
             $conex = new Conexion();
             $cn = $conex->conexion();
             $fecha = date("d/m/Y");
             // consulta
             $sql = "INSERT INTO producto VALUES(null,'$this->nombre',
-            '$fecha',$this->precio,'$this->disponibles', 0,'$this->foto')";
+            '$fecha',$this->precio,'$this->disponibles', 0,'$this->foto',$aprobacion)";
             $consulta = $cn->prepare($sql);
             try{
                 $consulta->execute();

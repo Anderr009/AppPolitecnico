@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php
+        
         require("../../../setup/datosConexion.php");
         require("../../Administrativo/clases/producto.php");
         //
@@ -26,10 +27,19 @@
                     move_uploaded_file($_FILES['imagen']['tmp_name'],$destino.$nombreImg);
                     //sesion
                     session_start();
+                    $idUser = $_SESSION['iniciado'];
                     $producto = $_SESSION['productoTemp'];
                     $producto->SetFoto($nombreImg);
-                    $producto->InsertarProducto();
-                    header("location:../index.php");
+                    $producto->InsertarProducto(0);
+                    $idProd = $producto->BuscarId($producto->GetNombre());
+                    var_dump($idProd);
+                    //consulta2
+                    $sqlInsert = "INSERT INTO publicaciones VALUES($idUser,$idProd)";
+                    $conex = new Conexion();
+                    $cn = $conex->conexion();
+                    $sentencia = $cn->prepare($sqlInsert);
+                    $sentencia->execute();
+                  //  header("location:../index.php");
                 }else{
                     ?>
                     <div class="msj-error">

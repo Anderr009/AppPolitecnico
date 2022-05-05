@@ -1,6 +1,7 @@
 <?php  
     require("../../../setup/datosConexion.php");
     require("../../Administrativo/clases/producto.php");
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -28,8 +28,8 @@
                     session_start();
                     $producto = $_SESSION['productoTemp'];
                     $producto->SetFoto($nombreImg);
-                    $producto->InsertarProducto();
-                    header("location:../index.php");
+                    $producto->InsertarProducto(1);
+                    header("location:InsProducto.php");
                 }else{
                     ?>
                     <div class="msj-error">

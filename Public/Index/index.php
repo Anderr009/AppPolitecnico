@@ -46,7 +46,7 @@ function MostrarProductos($id){
         $conex = new Conexion();
         $cn = $conex->conexion();
         $idReducido=$id - 10;
-        $sqlSelect = "SELECT * FROM producto";
+        $sqlSelect = "SELECT * FROM producto WHERE aprobada = 1";
         $query = $cn->prepare($sqlSelect);
         $query->execute();
         while($registro = $query->fetch(PDO::FETCH_ASSOC)){

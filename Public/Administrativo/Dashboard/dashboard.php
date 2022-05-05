@@ -18,7 +18,7 @@
             <a href="inventario/dashboard.php">Inventario</a>
         </div>
         <div class="bloque">
-            <a href="#">Publicaciones</a>
+            <a href="../publicaciones/dashboard.php">Publicaciones</a>
         </div>
         <div class="bloque">
             <a href="../Encuesta/dashboard-encuesta/dashboard.php">Gestionar encuestas</a>

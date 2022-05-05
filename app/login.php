@@ -43,9 +43,10 @@ $result = $query->fetch(PDO::FETCH_ASSOC);
 
 if($usuario = $result['nombreUsuario'] || $cont = $result['contraseña']){
 	session_start();
-	$_SESSION['iniciado'] = $result['id'];
+	$_SESSION['iniciado'] = $result['ID'];
 	$_SESSION['nivel'] = $result['Nivel'];
 	$_SESSION['estado'] = true;
+	
 	header("location:../Public/Index/scripts/validar-nivel.php");
 	}else{
 	header("location:../login.php");

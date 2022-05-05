@@ -60,7 +60,6 @@
             $this->datos = new Conexion();
             $this->fkUser=$this->datos->GetId("usuario","nombreUsuario",$this->objUser->GetUser());
             $this->fkCorreo = $this->datos->GetId("correo","correo",$this->objCorreo->GetCorreo());
-            $this->salario = $salario;
         }
         //
         private $id;
