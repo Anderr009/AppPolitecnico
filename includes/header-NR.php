@@ -11,23 +11,22 @@
 <body>
 	
 
-	<header id="main-header">
-		
-		<a id="logo-header" href="#">
-			<span class="site-name" name="inicio">Pagina de ventas</span>
-		</a> <!-- / #logo-header -->
-
+	
+<header id="main-header">
+		<nav>
+			<a id="logo-header" href="#">
+				<span class="site-name">Pagina de ventas</span>
+			</a> <!-- / #logo-header -->
+		</nav>
 		<nav class="nav">
-			<ul>
-				<li><a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a></li>
-				<li><a href="../../login.php">Iniciar sesión</a></li>
-				<li><a href="../../registro.php">Registrate</a></li>
-			</ul>
+				<a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a>
+				<a href="../login.php">Iniciar sesion</a>
+				<a href="../registro.php">Registrarse</a>
+
 		</nav><!-- / nav -->
 
 	</header><!-- / #main-header -->
 
-	
 	
 </body>
 </html>
