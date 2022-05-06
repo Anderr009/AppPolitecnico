@@ -220,8 +220,9 @@ CREATE TABLE `producto` (
   `Disponible` int(11) NOT NULL,
   `Descuento` int(11) NOT NULL,
   `foto` varchar(200) DEFAULT NULL,
+  `aprobada` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -230,7 +231,7 @@ CREATE TABLE `producto` (
 
 LOCK TABLES `producto` WRITE;
 /*!40000 ALTER TABLE `producto` DISABLE KEYS */;
-INSERT INTO `producto` VALUES (24,'Pata de cuaba','04/05/2022',3000,10,0,'kata.jpg'),(25,'Yuca hervida','04/05/2022',200,4,0,'kata.jpg'),(26,'Cuaderno practico de ramon','04/05/2022',4000,1,0,'highway-g9ca705d9a_1920.jpg');
+INSERT INTO `producto` VALUES (38,'Jabon ','05/05/2022',1200,10,0,'kata.jpg',0);
 /*!40000 ALTER TABLE `producto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -242,11 +243,11 @@ DROP TABLE IF EXISTS `publicaciones`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `publicaciones` (
-  `fkCliente` int(100) NOT NULL,
+  `fkUsuario` int(100) NOT NULL,
   `fkProducto` int(100) NOT NULL,
-  KEY `fkCliente` (`fkCliente`),
   KEY `fkProducto` (`fkProducto`),
-  CONSTRAINT `publicaciones_ibfk_1` FOREIGN KEY (`fkCliente`) REFERENCES `clienteid` (`ID`),
+  KEY `publicaciones_ibfk_1` (`fkUsuario`),
+  CONSTRAINT `publicaciones_ibfk_1` FOREIGN KEY (`fkUsuario`) REFERENCES `usuario` (`ID`),
   CONSTRAINT `publicaciones_ibfk_2` FOREIGN KEY (`fkProducto`) REFERENCES `producto` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -370,4 +371,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-03 21:22:51
+-- Dump completed on 2022-05-05 20:53:54
