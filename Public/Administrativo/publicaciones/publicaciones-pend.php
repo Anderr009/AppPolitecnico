@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../CSS/styles.css">
     <title>Publicaciones pendientes</title>
 </head>
 <body>
@@ -33,13 +35,21 @@
             header("Refresh");
         }
     ?>
-    <table>
-        <tr>
-            <td>Nombre del producto:</td>
-            <td>fechIngreso</td>
-            <td>Precio:</td>
-            <td>Foto:</td>
-        </tr>
+
+<br>
+<a href="http://localhost/AppPolitecnico/Public/administrativo/publicaciones/dashboard.php" class="botones-azul">Volver al menu</a>
+<h2 class="text-center">Publicaciones Pendientes</h2>
+<br>
+<br>
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <td>Nombre del producto:</td>
+                <td>fechIngreso</td>
+                <td>Precio:</td>
+                <td>Foto:</td>
+            </tr>
+        </thead>
         <?php
         while($registro = $consulta->fetch(PDO::FETCH_ASSOC)){
             ?>

@@ -17,8 +17,8 @@
 		<nav class="nav">
 
 				<a href="http://localhost/AppPolitecnico/Public/index/index.php">Inicio</a>
-				<a href="../login.php">Iniciar sesion</a>
-				<a href="../registro.php">Registrarse</a>
+				<a href="http://localhost/AppPolitecnico/login.php">Iniciar sesion</a>
+				<a href="http://localhost/AppPolitecnico/registro.php">Registrarse</a>
 
 
 		</nav><!-- / nav -->
