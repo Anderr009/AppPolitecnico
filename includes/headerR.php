@@ -18,6 +18,7 @@ $_SESSION['estado'] ?>
 				<a href="../../app/cerrar.php">Cerrar sesion </a>
 				<a href="../Cliente/perfil.php">Perfil</a>
 				<a href="../Index/insProducto/insProducto.php">Publicar</a>
+
 		</nav><!-- / nav -->
 
 	</header><!-- / #main-header -->
