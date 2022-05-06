@@ -1,4 +1,49 @@
 body{
+    background: radial-gradient(white,rgb(30, 159, 245)); 
+    height: 100vh;
+    /*height: 10%;*/
+
+}
+
+.titulo{
+    text-align: center;
+}
+
+form{
+    /* background-color:rgba(255, 255, 255, 0.528); */
+    background-color: white;
+    height: 100%;
+    width: 35%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    border:1px solid rgb(44, 44, 44);
+    box-shadow: black 1px -1px 4px 0px;
+
+
+}
+input{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.cont{
+    text-align: center;
+    padding: 12px;
+    
+}
+
+button{
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+/* body{
     font-family: arial;
     box-sizing: border-box;
     background: linear-gradient(37deg,#00add89d,#2063AB);
@@ -13,8 +58,8 @@ form{
     color: rgb(27, 22, 22);
     padding: 4% ;
     width: 220px;
-border: solid;
-border-radius: 5%;
+    border: solid;
+    border-radius: 5%;
 }
 
 input, textarea{
@@ -44,7 +89,7 @@ input.btn{
         cursor: pointer;
         color: rgb(236, 230, 230);
     
-    }
+    } */
 
 
 
