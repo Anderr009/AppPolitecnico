@@ -68,7 +68,7 @@
                                       
                                 <div class="producto">
                                         <div class="img card-img-top">
-                                                <img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="200px" height="200px" alt="">
+                                                <img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="150px" height="200px" alt="">
                                         </div>
                                         <div class="contenedorProd">
                                                 <div class="infoProd">

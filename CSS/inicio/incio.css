@@ -2,9 +2,20 @@
   font-family: letraT;
   src: url(../../letra/PTSerif-Bold.ttf);
 
-  font-family: letraS;
-  src: url(../../letra/OleoScriptSwashCaps-Regular.ttf);
-}
+
+  }
+  @font-face {
+    font-family: letraS;
+    src: url(../../letra/OleoScriptSwashCaps-Regular.ttf);
+  }
+  @font-face {
+    font-family: letraC;
+    src: url(../../letra/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+  }
+  @font-face{
+    font-family: letraB;
+    src: url(../../letra/Koulen-Regular.ttf);
+  }
 body{
   font-family: letraT;
 }
@@ -16,7 +27,7 @@ body{
 }
 section.welcome{
   width: 100%;
-  background-image: url(../../imagenes/Inicio/inicio.jpg);
+  background-image: url(../../imagenes/Inicio/inicio1.jpg);
   background-repeat: no-repeat;
   background-size:100%;
   background-attachment: fixed;
@@ -33,6 +44,11 @@ section div.contenedor{
 section.welcome div.logo{
   width: 40%;
 }
+
+section.welcome div.logo img{
+  margin: 0px 0px 0px 100px;
+
+}
 section.welcome div.info{
   margin-top: 10px;
   display: flex;
@@ -41,9 +57,10 @@ section.welcome div.info{
   width: 50%;
 }
 section.welcome div.info h1{
-  font-size: 80px;
-  padding: 12px;
+  font-size: 100px;
+  padding: 0px;
   border-bottom: 8px solid #00ADD8;
+  font-family: letraB;
 }
 
 /*-----------*/
@@ -67,11 +84,12 @@ section.productos div.inf h2{
   padding: 8px;
   border-bottom: 8px solid #00ADD8;
 }
+
 section.productos div.contenido{
   min-height: 800px;
   width: 100%;
   margin: 6em auto;
-  background: rgba(245, 245, 220, 0.524);
+  background:linear-gradient(93deg,#D2FAFB,#F1F1F1);
   padding: 3em 3em; 
   display: flex;
   flex-flow: row nowrap;
@@ -80,17 +98,23 @@ section.productos div.contenido{
 }
 /*---------PROD----*/
  div.producto{
+   transition: ease-in 0.1s;
    display: flex;
    flex-flow: column nowrap;
-  width: 22%;
-  height: 300px;
-  background: linear-gradient(37deg,#2C3333,#1A132F);
-  color: white;
-  border-radius: 8%;
-  -webkit-border-radius: 8%;
-  -moz-border-radius: 8%;
-  -ms-border-radius: 8%;
-  -o-border-radius: 8%;
+   width: 22%;
+   height: 300px;
+   background: linear-gradient(37deg,#2C3333,#1A132F);
+   color: white;
+   box-shadow: 6px 4px 10px #1C2B2D;
+   border-radius: 8%;
+   -webkit-border-radius: 8%;
+   -moz-border-radius: 8%;
+   -ms-border-radius: 8%;
+   -o-border-radius: 8%;
+   -webkit-transition: ease-in 0.1s;
+   -moz-transition: ease-in 0.1s;
+   -ms-transition: ease-in 0.1s;
+   -o-transition: ease-in 0.1s;
 }
 div.producto div.img img{
   width: 100%;
@@ -108,7 +132,7 @@ div.producto div.infoProd{
 }
 div.producto div.infoProd h4{
   font-size: 18px;
-  font-family: letraS;
+  font-family: letraC;
 }
 div.producto  div.btn a{
   color: #00ADD8;
@@ -121,6 +145,11 @@ div.producto  div.btn a{
   -moz-border-radius: 4%;
   -ms-border-radius: 4%;
   -o-border-radius: 4%;
+  transition: ease 0.1s;
+  -webkit-transition: ease 0.1s;
+  -moz-transition: ease 0.1s;
+  -ms-transition: ease 0.1s;
+  -o-transition: ease 0.1s;
 }
 div.producto div.btn{
   display: flex;
@@ -131,4 +160,17 @@ div.contenedorProd{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+}
+div.producto:hover{
+  opacity: 0.9;
+}
+div.producto div.btn a:hover{
+  color: black;
+  background: #00ADD8;
+  padding: 6px 10px;
+  transition: ease-in 0.2s;
+  -webkit-transition: ease-in 0.2s;
+  -moz-transition: ease-in 0.2s;
+  -ms-transition: ease-in 0.2s;
+  -o-transition: ease-in 0.2s;
 }
