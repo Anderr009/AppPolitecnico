@@ -1,6 +1,6 @@
 @font-face {
     font-family: letraT;
-    src: url(../../letra/Helvetica-Bold.ttf);
+    src: url(../../letra/Koulen-Regular.ttf);
 }  
 
 *{
@@ -16,7 +16,7 @@ header#main-header{
     align-items: center;
     justify-content: center;
    /* background:radial-gradient(circle,#11468F,#041562);*/
-   background: #000000;
+   background: linear-gradient(84deg,#3282B8,#3282B8);
     border-bottom: 1.5px solid #F8F8F8;
     top: 0px;
     position: sticky;

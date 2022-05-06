@@ -10,7 +10,7 @@ $_SESSION['estado'] ?>
 
 <body>
 
-	
+		
 	<header id="main-header">
 
 		<nav class="nav">	
