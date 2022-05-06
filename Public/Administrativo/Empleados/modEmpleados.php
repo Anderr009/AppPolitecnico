@@ -47,7 +47,7 @@
         $contador = $SQLContador->fetch(PDO::FETCH_ASSOC);
     ?>  
     <br>
-    <a href="../Dashboard/dashboard.php" class="botones-azul">Volver al menu</a>
+    <a href="http://localhost/AppPolitecnico/Public/administrativo/Dashboard/Gestion-empleados/gestion.php" class="botones-azul">Volver al menu</a>
 
     
     <div class="informacion ">

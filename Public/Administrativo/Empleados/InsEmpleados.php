@@ -116,10 +116,11 @@
                         $direccion = $_POST['direccion'];
                         $horaEntrada = $_POST['HoraEntrada'];
                         $horaSalida = $_POST['HoraSalida'];
-                        //comprobacion (temporal luego sera reemplazada por js)
+                        //comprobacion (temporal, luego sera reemplazada por js)
                         if($user == "" or $pass == "" or $correo =="" or $nombre =="" or $apellido == ""
                         or $cedula == "" or $horaEntrada =="" or $horaSalida == ""){
-                            echo "Introduzca bien los campos";
+                            echo "<script>alert('Llene todos los campos'    )</script>";
+
                         }else{
                             //creacion de objetos
                             //usuario

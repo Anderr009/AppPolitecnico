@@ -1,0 +1,23 @@
+body{
+    background:radial-gradient(rgb(116, 185, 225),white);
+    height: 150vh;
+}
+
+.selection h2{
+    text-align: left;
+    margin: 30px;
+}
+
+
+
+.selection{
+    background:radial-gradient(white,rgb(169, 169, 169));
+    width: 18%;
+     text-align: center;
+     margin: 0 auto;
+     font-size: 30px;
+     padding: 7px;
+     border-radius: 10px;
+     box-shadow: 2px 2px 1px 2px rgb(62, 62, 62);
+
+ }
