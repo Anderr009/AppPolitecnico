@@ -29,7 +29,7 @@
                             <img src="../../imagenes/capitalLogo.png" width="300px" alt="">
                     </div>
                     <div class="info">
-                            <h1>La capital</h1>
+                            <h1>La Capital</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, impedit laborum. Fugit aspernatur deserunt corporis laboriosam vero inventore harum minus ab consequuntur architecto dolorem voluptas ipsa, nesciunt officiis id placeat..</p>
                     </div>
             </div>
