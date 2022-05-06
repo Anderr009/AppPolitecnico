@@ -51,7 +51,6 @@ body{
      width: 20px;
      display: flex;
      align-items: center;
-     padding: 1.5 rem;
      border: solid thin white;
      border-radius: 50%;
      font-size: 1.5rem;
@@ -79,11 +78,8 @@ body{
     border-bottom: blue thin solid;
     outline: none;
     padding: .2rem 0;
-    font-size: .9rem 0;
-    color: black    ;
-
-
-
+    font-size: 9rem 0;
+    color: black;
 }
 .formulario input[type="button"]{
     width: 60%;

@@ -5,7 +5,6 @@ require("../setup/datosConexion.php");
 //require("../Public/Administrativo/clases/correo.php");
 //require("../Public/Administrativo/clases/user.php");
 require("../Public/Administrativo/clases/cliente.php");
-
 $usuario = $_POST['username'];
 $fullname = $_POST['fullname'];
 $email = $_POST['email'];

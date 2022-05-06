@@ -14,16 +14,11 @@
 	
 	
 <header id="main-header">
-		<nav>
-			<a id="logo-header" href="#">
-				<span class="site-name">Pagina de ventas</span>
-			</a> <!-- / #logo-header -->
-		</nav>
 		<nav class="nav">
 
 				<a href="http://localhost/AppPolitecnico/Public/index/index.php">Inicio</a>
-				<a href="http://localhost/AppPolitecnico/login.php">Iniciar sesion</a>
-				<a href="http://localhost/AppPolitecnico/registro.php">Registrarse</a>
+				<a href="../login.php">Iniciar sesion</a>
+				<a href="../registro.php">Registrarse</a>
 
 
 		</nav><!-- / nav -->

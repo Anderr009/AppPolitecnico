@@ -12,7 +12,7 @@
 	<header id="main-header">
 		
 		<a id="logo-header" href="http://localhost/AppPolitecnico/Public/index/index.php">
-			<img src="http://localhost/AppPolitecnico/imagenes/ATSlogo.png" alt="" width="67px">
+			<img src="http://localhost/AppPolitecnico/imagenes/Admin/logo.png" alt="" width="65px">
 			<!-- <span class="site-name">Pagina de ventas</span> -->
 		</a> <!-- / #logo-header -->
 

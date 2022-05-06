@@ -1,3 +1,8 @@
+@font-face {
+    font-family: letraT;
+    src: url(../../letra/Helvetica-Bold.ttf);
+}  
+
 *{
     margin: 0;
     padding: 0;
@@ -9,17 +14,24 @@ header#main-header{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
-    background:radial-gradient(circle,#11468F,#041562);
-    position: sticky;
+    justify-content: center;
+   /* background:radial-gradient(circle,#11468F,#041562);*/
+   background: #000000;
+    border-bottom: 1.5px solid #F8F8F8;
     top: 0px;
+    position: sticky;
+    top: 0%;
 }
-header nav{
-    margin: 0px 3em;
+header#main-header nav.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
 }
 header nav a{
     color: #F8F8F8;
     margin: 0px 10px;
+    margin: 0px 15px;
     font-size: 18px;
     
 }

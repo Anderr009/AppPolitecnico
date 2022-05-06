@@ -1,0 +1,47 @@
+.tabla{
+    background-color:rgb(255, 255, 255) ;
+    width: 100%;
+}
+.sombreo:hover{
+    background-color:rgb(246, 246, 246) ;
+}
+
+.tabla img{
+    max-width: 100px;
+}
+
+
+.tabla td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+
+.cabeza-tabla{
+    color: white;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.cabeza-tabla tr{
+    background-color:rgb(24, 24, 24) ;
+
+}
+
+.info{
+    font-size: 20px;    
+    background:linear-gradient(rgba(200, 231, 255, 0.62),rgba(171, 158, 244, 0.505)) ;
+    border-radius: 3px;
+    text-align: center;
+    width: 17%;
+}
+
+.info b{
+    font-size: 23px;    
+}
+
+
+.bloqueProd h2{
+    text-align: center;
+    background:linear-gradient(rgba(200, 231, 255, 0.62),rgba(171, 158, 244, 0.505)) ;
+
+}

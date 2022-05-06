@@ -12,7 +12,7 @@
     <title>Gestion de empleados</title>
 </head>
 <body>
-<a href="../Dashboard/Gestion-empleados/gestion.php"><button class="botones-azul">Volver</button></a>
+<a href="../dashboard.php"><button class="botones-azul">Volver</button></a>
     <div class="container">
         <div class="row">
             <div class="menu colum">

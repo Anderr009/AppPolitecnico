@@ -5,29 +5,30 @@
 		<title>Formulario de Registro</title>
 	</head>
 	<body>
-		<form class="formulario">
-			<h1 class="Create-acount" Crear una cuenta> </h1>
-<div class="container">
-<div class="row">
-<div class="col-md-6">	
-		<h3>Registro</h3>
-		<div class="iconos">
-			<div class="border-iconos">
-		<!--	<box-icon type='logo' name='instagram'></box-icon> -->
-</div>
-<!-- <div class="border-iconos">
-<box-icon name='twitter' type='logo' ></box-icon>
 
-</div> 
-<div class="border-iconos">
-<box-icon name='facebook-circle' type='logo' ></box-icon> -->
 
-</div>
+		<form class = "formulario" action="app/registro.php" method="POST">
 				
+				<h1 class="Create-acount" Crear una cuenta> </h1>
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">	
+				<h3>Registro</h3>
+				<div class="iconos">
+					<div class="border-iconos">
+					<box-icon type='logo' name='instagram'></box-icon>
 		</div>
-		<p class="Acount-free"> Bienvenido a registro </p>
+		<!-- <div class="border-iconos">
+		<box-icon name='twitter' type='logo' ></box-icon>
 
-		<form role="form" name="registro" action="app/registro.php" method="post">
+		</div> 
+		<div class="border-iconos">
+		<box-icon name='facebook-circle' type='logo' ></box-icon> -->
+
+		</div>
+						
+				</div>
+		<p class="Acount-free"> Crear cuenta gratis </p>
 		  <div class="form-group">
 		    <label for="username">Nombre de usuario</label>
 		    <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
