@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="CSS/Insertar-producto.css">
+<link rel="stylesheet" href="CSS/login.css">
 	<title>Formulario de Registro</title>
 </head>
 
