@@ -24,10 +24,16 @@
         ?>
 
     <section class="welcome">
+            <div class="logo">
+                    <img src="../../imagenes/capitalLogo.png" width="200px" alt="">
+            </div>
             <div class="info">
                     <h1>La Capital</h1>
                     <p>Lorem ipsum dolor sit amet.</p>
             </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave" >
+                        <path fill="red"  fill-opacity="1" d="M0,320L40,309.3C80,299,160,277,240,250.7C320,224,400,192,480,160C560,128,640,96,720,74.7C800,53,880,43,960,69.3C1040,96,1120,160,1200,170.7C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                </svg>-->
     </section>
 
         <section class="productos">

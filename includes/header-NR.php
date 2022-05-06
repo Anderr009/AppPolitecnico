@@ -14,11 +14,6 @@
 	
 	
 <header id="main-header">
-		<nav>
-			<a id="logo-header" href="#">
-				<span class="site-name">Pagina de ventas</span>
-			</a> <!-- / #logo-header -->
-		</nav>
 		<nav class="nav">
 
 				<a href="C:\xampp\htdocs\Lista\AppPolitecnico\Public\Index\index.php">Inicio</a>

@@ -12,13 +12,18 @@ section.welcome{
   background-attachment: fixed;
   height: 580px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   align-items: center;
-  margin: auto;
-  justify-content: center;
+  justify-content: space-around;
+}
+section.welcome div.logo{
+  display: flex;
+  width: 48%;
 }
 section.welcome div.info{
+  display: flex;
   color: #F8F8F8;
+  width: 48%;
 }
 section.welcome div.info h1{
   font-size: 80px;
