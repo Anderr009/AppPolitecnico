@@ -174,3 +174,6 @@ div.producto div.btn a:hover{
   -ms-transition: ease-in 0.2s;
   -o-transition: ease-in 0.2s;
 }
+svg{
+  width: 100px;
+}

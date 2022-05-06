@@ -9,6 +9,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="../../CSS/inicio/incio.css">
         <link rel="stylesheet" href="../../CSS/header/estilo.css">
+        <link rel="stylesheet" href="../../CSS/footer.css">
         <title>Document</title>
     </head>
     <body>
@@ -95,6 +96,6 @@
                 ?>
                 </div>
 </section>
-
+<?php require("../../footer.php")?>
 </body>
 </html>

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/publicaciones.css">
     <link rel="stylesheet" href="../../CSS/styles.css">
+    <style>
+        body{
+            background: #EEEEEE;
+        }
+    </style>
     <title>Perfil</title>
 </head>
 <body>
