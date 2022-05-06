@@ -93,3 +93,16 @@
 	font-size: 19px;
 	margin: 5px;
 }
+
+/* Botones de admnistrador */
+
+.botones-azul{
+	background:radial-gradient(circle,#11468F,#041562);
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px;
+	text-decoration: none	;
+
+}

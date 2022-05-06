@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagenes/descarga.jpg);
+    background-image: url(../imagenes/teclado.jpg);
 
 
 }
@@ -30,9 +30,10 @@ body{
     width: 400px;
     padding: 1rem;
     margin: 2rem;
-    background-color: rgba(128, 128, 128, 0.473);
+    background-color: rgba(249, 249, 249, 0.473);
     text-align: center;
-    border-radius: 13%;
+    height: 95%;
+    border-radius:5%;
 }
 .Create-acount{
     padding: 2.7rem 0 ;

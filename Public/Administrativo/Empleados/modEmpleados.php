@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../../CSS/styles.css">
+    <link rel="stylesheet" href="../../../CSS/header/estilo.css">
+    <link rel="stylesheet" href="../../../CSS/bootstrap/css/bootstrap.css">
 </head>
 <body>
     <?php
@@ -14,8 +16,8 @@
         require('../clases/empleado.php');
         include("../../../includes/headerAdmin.php");
         //
-    
-      //  require('../../../setup/datosConexion.php');
+        
+        //  require('../../../setup/datosConexion.php');
         if(isset($_GET['id'])){
             $valorElim = $_GET['id'];
             $valorUs = $_GET['idUs'];
@@ -44,7 +46,8 @@
         $SQLContador->execute();
         $contador = $SQLContador->fetch(PDO::FETCH_ASSOC);
     ?>  
-    <a href="../Dashboard/dashboard.php" class="btn btn-secondary">Volver al menu</a>
+    <br>
+    <a href="../Dashboard/dashboard.php" class="botones-azul">Volver al menu</a>
 
     
     <div class="informacion ">
