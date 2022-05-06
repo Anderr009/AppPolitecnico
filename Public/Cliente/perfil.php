@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/publicaciones.css">
+    <link rel="stylesheet" href="../../CSS/styles.css">
     <title>Perfil</title>
 </head>
 <body>
@@ -38,14 +39,14 @@
         }
     ?>
     <div class="btnVolver">
-        <a href="../Index/index.php">Volver</a>
+        <a href="../Index/index.php"><button class="botones-azul">Volver</button></a>
     </div>
     <div class="datos">
         <div class="img">
 
         </div>
         <div class="info">
-        <li>Nombre de usuario: <?php echo $user['nombreUsuario'];?></li>
+        <p>Nombre de usuario: <b><?php echo $user['nombreUsuario'];?></b></p>
         </div>
     </div>
     <div class="bloqueProd">
@@ -58,18 +59,19 @@
                     <td>Fecha de subida:</td>
                     <td>Disponible:</td>
                     <td>Foto:</td>
+                    <td>Eliminar:</td>
                 </tr>
             </thead>
             <?php
                 while($registro = $consulta->fetch(PDO::FETCH_ASSOC)){
                     ?>
-                    <tr>
+                    <tr class="sombreo">
                         <td><?php echo$registro['Nombre']?></td>
                         <td><?php echo$registro['Precio']?></td>
                         <td><?php echo$registro['fechaIngreso']?></td>
                         <td><?php echo$registro['Disponible']?></td>
                         <td><img src="../../imagenes/productos/<?php echo$registro['foto']?>" width="100px" alt=""></td>
-                        <td><a href="?elimP=<?php echo $registro['fkProducto']?>">Eliminar</a></td>
+                        <td><a href="?elimP=<?php echo $registro['fkProducto']?>"><button class="botones-azul">Eliminar</button></a></td>
                     </tr>
                         <?php
                 }
