@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/publicaciones.css">
     <title>Perfil</title>
 </head>
 <body>
@@ -49,14 +50,16 @@
     </div>
     <div class="bloqueProd">
         <h2>Productos aprobados y publicados</h2>
-        <table>
-            <tr>
-                <td>Nombre:</td>
-                <td>Precio:</td>
-                <td>Fecha de subida:</td>
-                <td>Disponible:</td>
-                <td>Foto:</td>
-            </tr>
+        <table class="tabla">
+            <thead class="cabeza-tabla">
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Precio:</td>
+                    <td>Fecha de subida:</td>
+                    <td>Disponible:</td>
+                    <td>Foto:</td>
+                </tr>
+            </thead>
             <?php
                 while($registro = $consulta->fetch(PDO::FETCH_ASSOC)){
                     ?>
