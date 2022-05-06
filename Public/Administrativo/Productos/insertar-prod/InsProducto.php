@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="../../../../CSS/bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="../../../../CSS/producto.css">
+<link rel="stylesheet" href="../../../../CSS/styles.css">
+
 <?php  
     
     require("../../../../setup/datosConexion.php");
@@ -29,7 +31,7 @@
         }
     ?>
     <!-- Volver al dashboard es temporal a lo que se programa un inventario.-->
-    <a href="../../Dashboard/dashboard.php">Volver</a>
+    <a href="http://localhost/AppPolitecnico/Public/administrativo/Dashboard/inventario/dashboard.php" class="botones-azul">Volver</a>
     <div class="container-sm">
         <br>
         <h3 class="titulo">Insertar Productos</h3>

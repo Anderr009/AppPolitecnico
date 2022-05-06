@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../../../CSS/styles.css">
+    <link rel="stylesheet" href="../../../../CSS/header/estilo.css">
+    <link rel="stylesheet" href="../../../../CSS/bootstrap/css/bootstrap.css">
 </head>
 <body>
     
@@ -32,7 +34,7 @@
 
         }
         ?>
-        <a href="../../dashboard/inventario/dashboard.php" class="btn btn-secondary">Volver al menu</a>
+        <a href="http://localhost/AppPolitecnico/Public/administrativo/Dashboard/inventario/dashboard.php" class="botones-azul">Volver</a>
         <br>
         <br>
     <table class="table table-hover">

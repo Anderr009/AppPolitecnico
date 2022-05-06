@@ -19,7 +19,7 @@
 		<nav class="nav ">
 			
 				<a href="http://localhost/AppPolitecnico/Public/index/index.php">Inicio</a>
-				<a href=".http://localhost/AppPolitecnico/app/cerrar.php">Cerrar sesion </a>
+				<a href="http://localhost/AppPolitecnico/app/cerrar.php">Cerrar sesion </a>
 				<b class="text-white">| Administrador</b>
 				
 			
