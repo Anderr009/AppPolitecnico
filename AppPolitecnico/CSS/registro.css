@@ -51,7 +51,7 @@ body{
      width: 20px;
      display: flex;
      align-items: center;
-     padding: 1.5 rem;
+     padding: 1.5rem;
      border: solid thin white;
      border-radius: 50%;
      font-size: 1.5rem;
@@ -65,7 +65,8 @@ body{
 }
 .Acount-free{
     padding:2rem 0;
-    text-decoration-color: rgb(10, 9, 9);
+    
+
 
 
 }

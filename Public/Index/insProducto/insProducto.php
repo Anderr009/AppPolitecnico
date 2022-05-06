@@ -10,8 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insertar producto</title>
+ <link rel="stylesheet" href="../../../CSS/insProducto.css">
 </head> 
 <body>
+    
+
+
     <?php
         if(isset($_POST['Enviar'])){
             $nombre =$_POST['nombre'];
@@ -24,12 +28,15 @@
            $_SESSION['productoTemp'] = $producto;
            header("location:insImagen.php");
         }
+
     ?>
+
     <!-- Volver al dashboard es temporal a lo que se programa un inventario.-->
     <a href="../index.php">Volver</a>
     <form action="" method="POST">
-        <label for="Name">Nombre del Producto</label>
-        <input type="text" name="nombre" id="">
+       
+        <label for="Name" class="field">Nombre del Producto</label>
+        <input type="text" class="field "name="nombre" id="">
 
        <!-- <label for="Date">fechaIngreso:</label>
         <input type="text" name="fecha" id="">-->
@@ -43,7 +50,7 @@
        <!-- <label for="Descuento">Descuento:</label>
         <input type="text" name="descuento" id="">-->
 
-        <input type="submit" value="Enviar" name="Enviar">
+        <input type="submit" class="btn" value="Enviar" name="Enviar">
 
     </form>
 </table>

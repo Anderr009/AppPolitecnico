@@ -13,7 +13,7 @@
 		<h3>Registro</h3>
 		<div class="iconos">
 			<div class="border-iconos">
-			<box-icon type='logo' name='instagram'></box-icon>
+		<!--	<box-icon type='logo' name='instagram'></box-icon> -->
 </div>
 <!-- <div class="border-iconos">
 <box-icon name='twitter' type='logo' ></box-icon>
@@ -25,7 +25,7 @@
 </div>
 				
 		</div>
-		<p class="Acount-free"> Crear cuenta gratis </p>
+		<p class="Acount-free"> Bienvenido a registro </p>
 
 		<form role="form" name="registro" action="app/registro.php" method="post">
 		  <div class="form-group">
@@ -50,6 +50,9 @@
 		  </div>
 
 		  <button type="submit" class="btn btn-success">Registrar</button>
+		  <div class="Registrado">
+				Estas registrado? <a href="login.php"> Inicia sesion
+				</div>
 		</form>
 		</div>
 		</div>
