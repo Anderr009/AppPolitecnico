@@ -29,9 +29,12 @@
             $sentencia->execute();
             unlink($url);
             header("location:?");
+
         }
         ?>
         <a href="../../dashboard/inventario/dashboard.php" class="btn btn-secondary">Volver al menu</a>
+        <br>
+        <br>
     <table class="table table-hover">
         <thead class="table-dark">
             
@@ -42,6 +45,7 @@
                 <td>Fecha de ingreso:</td>
                 <td>Descuento:</td>
                 <td>Eliminar:</td>
+                <td>Modificar:</td>
             </tr>
         </thead>
         <?php
